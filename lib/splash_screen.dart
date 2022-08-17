@@ -29,8 +29,11 @@ class _SplashScreenState extends State<SplashScreen> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(FontAwesome5.whatsapp_square, size:150,color: Colors.green,),
-                Text('Direct WhatsApp', style: TextStyle(color: Colors.white),)
+                Container(
+                  height: 150,
+                  width: 150,
+                  child: Image.asset('assets/images/rating.png',fit: BoxFit.fill,)),
+                Text('Direct WhatsApp', style: TextStyle(color: Colors.white, fontSize: 35),)
               ],
             ),
           ),
